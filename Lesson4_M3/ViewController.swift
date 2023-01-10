@@ -95,7 +95,6 @@ extension ViewController: UITableViewDelegate {
         let movieVc = storyboard?.instantiateViewController(withIdentifier: "movie_vc") as! MovieViewController
         
         movieVc.img = movies[indexPath.row].image
-//        movieVc.img = movies[indexPath.row].image
         navigationController?.pushViewController(movieVc, animated: true)
     }
 }
